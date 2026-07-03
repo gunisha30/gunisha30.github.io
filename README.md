@@ -1,17 +1,24 @@
 # Gunisha Chaturvedi Portfolio
 
-A simple, free GitHub Pages portfolio site built with static HTML, CSS, and JavaScript.
+A compact, recruiter-first GitHub Pages portfolio site built with static HTML, CSS, and JavaScript.
+
+## Files
+
+- `index.html` - portfolio page
+- `styles.css` - responsive compact styling
+- `script.js` - footer year
+- `Resume_Gunisha_Chaturvedi.docx` - downloadable resume linked from the page
 
 ## How to publish for free on GitHub Pages
 
 1. Create a new GitHub repository named `gunisha-portfolio` or `<your-github-username>.github.io`.
-2. Upload these files: `index.html`, `styles.css`, `script.js`, and `README.md`.
+2. Upload all files from this folder to the repository root.
 3. Go to **Settings > Pages**.
 4. Under **Build and deployment**, choose **Deploy from a branch**.
 5. Select branch `main` and folder `/root`.
 6. Save. Your site will be live in a few minutes.
 
-## Customize
+## Links already added
 
-- Replace the LinkedIn placeholder URL in `index.html` with your actual LinkedIn profile link.
-- Add project GitHub links inside the project cards when ready.
+- LinkedIn: <https://www.linkedin.com/in/gunishachaturvedi/>
+- Resume: `Resume_Gunisha_Chaturvedi.docx`

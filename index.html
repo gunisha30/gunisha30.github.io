@@ -3,152 +3,123 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gunisha Chaturvedi | Data Scientist & GenAI Engineer</title>
-  <meta name="description" content="Portfolio of Gunisha Chaturvedi - Senior Associate Data Scientist specializing in GenAI, RAG, LangGraph, ML, and risk automation." />
+  <title>Gunisha Chaturvedi | Data Scientist, AI Engineer, MLE</title>
+  <meta name="description" content="Portfolio of Gunisha Chaturvedi - Data Scientist and AI Engineer specializing in GenAI, RAG, multi-agent systems, ML, and production AI." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="hero">
-    <nav class="nav">
-      <a href="#home" class="logo">GC</a>
-      <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
+  <main class="page-shell">
+    <section class="hero compact-card" aria-label="Intro">
+      <div>
+        <p class="eyebrow">Gunisha Chaturvedi</p>
+        <h1>Data Scientist building GenAI, RAG and production ML systems.</h1>
+        <p class="open-roles">Open to roles - Data Scientist, AI Engineer, SDE, MLE, FDE</p>
+        <p class="intro">
+          I work at the intersection of machine learning, risk automation, and enterprise AI, with hands-on experience building agentic workflows, RAG pipelines over mixed-format PDFs, metadata filtering, reranking, prompt engineering, memory-backed agents, API integrations, and Dockerized GenAI applications.
+        </p>
       </div>
-    </nav>
-
-    <section id="home" class="hero-content">
-      <p class="eyebrow">Senior Associate Data Scientist</p>
-      <h1>Hi, I’m Gunisha Chaturvedi.</h1>
-      <p class="subtitle">I build GenAI, RAG, multi-agent, and ML systems that turn complex business problems into reliable, production-ready solutions.</p>
-      <div class="cta-row">
-        <a class="btn primary" href="#projects">View Projects</a>
-        <a class="btn secondary" href="mailto:gunisha3007@gmail.com">Contact Me</a>
-      </div>
-    </section>
-  </header>
-
-  <main>
-    <section id="about" class="section">
-      <div class="section-heading">
-        <p class="eyebrow">About</p>
-        <h2>Data scientist focused on practical GenAI systems.</h2>
-      </div>
-      <p class="about-text">
-        I work at the intersection of machine learning, risk automation, and enterprise AI. My recent work includes agentic risk assessment automation, RAG pipelines over mixed-format PDFs, metadata filtering, re-ranking, prompt engineering, and deployment of GenAI applications.
-      </p>
-    </section>
-
-    <section id="highlights" class="section cards three">
-      <article class="card stat">
-        <h3>95%</h3>
-        <p>Turnaround time reduction through agentic risk assessment automation.</p>
-      </article>
-      <article class="card stat">
-        <h3>AUD 12M</h3>
-        <p>Estimated annual savings delivered through automation work.</p>
-      </article>
-      <article class="card stat">
-        <h3>78%</h3>
-        <p>Task completion rate achieved in multi-agent risk automation workflow.</p>
-      </article>
-    </section>
-
-    <section id="experience" class="section">
-      <div class="section-heading">
-        <p class="eyebrow">Experience</p>
-        <h2>Where I’ve worked</h2>
-      </div>
-      <div class="timeline">
-        <article class="timeline-item">
-          <span class="date">Mar 2025 - Present</span>
-          <h3>Senior Associate Data Scientist · Commonwealth Bank</h3>
-          <p>Designed agentic risk assessment automation using RAG, sub-agents, LangGraph memory, prompt engineering, API ingestion, and Dockerized deployment.</p>
-        </article>
-        <article class="timeline-item">
-          <span class="date">Mar 2024 - Mar 2025</span>
-          <h3>Data Scientist · Societe Generale</h3>
-          <p>Improved multi-class classification performance, built GDPR purge logic in PySpark, and monitored financial crime production models using KPI-based governance.</p>
-        </article>
-        <article class="timeline-item">
-          <span class="date">Sep 2023 - Feb 2024</span>
-          <h3>Associate Data Scientist · Societe Generale</h3>
-          <p>Built challenger models using Decision Tree, Random Forest, and XGBoost, handled class imbalance with SMOTE, and explained misclassifications with SHAP.</p>
-        </article>
-        <article class="timeline-item">
-          <span class="date">Jun 2021 - Aug 2023</span>
-          <h3>Software Engineer · Societe Generale</h3>
-          <p>Developed a hybrid chatbot with contextual and menu-based flows, API integration, and Keras-based NLP features.</p>
-        </article>
+      <div class="quick-links" aria-label="Profile links">
+        <a class="btn primary" href="Resume_Gunisha_Chaturvedi.docx">Resume</a>
+        <a class="btn" href="https://www.linkedin.com/in/gunishachaturvedi/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a class="btn" href="mailto:gunisha3007@gmail.com">Email</a>
       </div>
     </section>
 
     <section id="projects" class="section">
-      <div class="section-heading">
+      <div class="section-title compact-title">
         <p class="eyebrow">Projects</p>
-        <h2>Selected work</h2>
+        <h2>Selected GenAI and ML work</h2>
       </div>
-      <div class="cards two">
-        <article class="card">
-          <h3>Agentic Risk Assessment Automation</h3>
-          <p>Multi-agent GenAI workflow with RAG sub-agents, prompt engineering, LangGraph short- and long-term memory experiments, and full application deployment.</p>
-          <div class="tags"><span>LangGraph</span><span>RAG</span><span>Prompt Engineering</span><span>Docker</span></div>
+
+      <div class="project-grid">
+        <details class="project-card">
+          <summary>
+            <span>
+              <strong>Project 1 · Stock Market PDF RAG Pipeline</strong>
+              <em>Metadata-filtered RAG with embeddings, vector stores, LLM grading, query rewriting and cross-encoder reranking.</em>
+            </span>
+          </summary>
+          <div class="project-body">
+            <p>Built a RAG pipeline to answer queries over a corpus of mixed-format stock market PDFs, including analysis reports, annual reports, AGM notices, and market news. Achieved <strong>65% retrieval recall</strong> and <strong>69% answer accuracy</strong> on a manually evaluated question set. Used - Amazon Titan Text Embeddings v2 (1024-dim vectors), all-MiniLM-L6-v2, ChromaDB/Milvus vector store with optional persistence to disk to avoid re-embedding on repeated runs.</p>
+
+            <p>Designed a two-stage metadata system to improve retrieval precision before semantic search. In the first stage, each PDF page is individually processed by Claude Sonnet via structured output to extract fields including company names, sectors, document type, time period, financial metrics, dividend information, and comparative analysis flags. Page-level results are aggregated into a document-level metadata record, then cached to JSON to eliminate re-extraction on subsequent runs. In the second stage, a second structured LLM call parses the user query into a <code>QueryIntent</code> object (companies, sectors, doc types, topic keywords), which is scored against each document's metadata using weighted rules, and the top-k scoring documents are passed as a filter to ChromaDB, narrowing semantic search to only the most relevant PDFs before retrieval.</p>
+
+            <p>Implemented a retrieval quality pipeline with multiple configurable stages. Retrieved chunks are first filtered by an LLM relevance grader that assigns a binary <code>yes/no</code> score to each chunk against the original query, discarding irrelevant results before answer generation. Additionally designed and integrated a cross-encoder reranking stage using <code>cross-encoder/ms-marco-MiniLM-L6-v2</code>, pairs each retrieved chunk with the query, scores them with a cross-encoder model, and re-orders by relevance before passing to the LLM (toggled via a flag for A/B testing). Query rewriting is applied upstream: a dedicated LLM call reformulates complex multi-part queries into 2–4 decomposed sub-queries to improve recall. The final RAG chain passes both retrieved context and the pre-filtered document metadata to the answer-generation LLM, giving it structured document-level signals (financial metrics, dividend info, company summaries) alongside raw chunk text to produce more grounded responses.</p>
+          </div>
+        </details>
+
+        <details class="project-card">
+          <summary>
+            <span>
+              <strong>Project 2 · Stock Market Multi-Agent Assistant</strong>
+              <em>Two-tier agent hierarchy with orchestrator, sub-agents, parallel tool calls and PostgreSQL-backed memory.</em>
+            </span>
+          </summary>
+          <div class="project-body">
+            <p>Built a stock market assistant - a multi-agent system that routes user queries across three specialized sub-agents: a stock price agent (real-time data via yfinance), a defence sector research agent, and a RAG document research agent. The orchestrator decomposes multi-part queries into parallel tool calls where possible. Sub-agents are added as tools to the orchestrator, and are themselves individual agents with their own tool sets, forming a two-tier hierarchy. Achieved an estimated 85% tool routing accuracy (correct sub-agent selected for query type) on manual evaluation.</p>
+
+            <p>Dual-layer memory architecture with PostgreSQL, short-term conversation window + long-term cross-session recall - Implemented a two-tier memory system using LangGraph's PostgreSQL backends. Short-term memory (within-session conversation history) is handled via PostgresSaver as a checkpointer, each turn's full message state is persisted per thread_id, allowing users to resume any past session by providing its ID; LangGraph automatically reloads and appends to the full history without any manual conversation management. Long-term memory is handled via PostgresStore, at the end of every session, the complete conversation is summarized by the LLM into 2–3 sentences and stored per user_id; on subsequent sessions, all past summaries are retrieved and injected into the system prompt, giving the model persistent cross-session context (e.g., user risk preferences, stocks previously discussed). Also implemented MemorySaver (in-memory checkpointer) as a lightweight alternative for local testing. Built a separate introspection utility that reads raw checkpoint state directly from PostgreSQL and prints the full message history for any thread_id, useful for debugging state corruption without running the full graph.</p>
+
+            <p>Achieved an estimated 78% end-to-end answer accuracy on a manually curated set of 25 stock market queries spanning price lookups, sector analysis, and document-grounded questions.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section id="experience" class="section compact-card">
+      <div class="section-title compact-title">
+        <p class="eyebrow">Work Experience</p>
+        <h2>Recent roles</h2>
+      </div>
+      <div class="experience-list">
+        <article>
+          <h3>Senior Associate Data Scientist · Commonwealth Bank</h3>
+          <p class="date">Mar 2025 - Present</p>
+          <p>Agentic risk assessment automation, RAG sub-agents, LangGraph memory, prompt engineering, API ingestion and Dockerized GenAI deployment.</p>
         </article>
-        <article class="card">
-          <h3>PDF RAG Pipeline</h3>
-          <p>Built a RAG pipeline over mixed-format PDFs with metadata pre-filtering, semantic chunking, LLM-based re-ranking, and cross-encoder re-ranking.</p>
-          <div class="tags"><span>Embeddings</span><span>Re-ranking</span><span>Metadata Filtering</span></div>
+        <article>
+          <h3>Data Scientist · Societe Generale</h3>
+          <p class="date">Mar 2024 - Mar 2025</p>
+          <p>Improved classification performance, built GDPR purge logic using PySpark, and monitored financial crime production models across governance KPIs.</p>
         </article>
-        <article class="card">
-          <h3>Risk Rating ML Models</h3>
-          <p>Built classification challenger models for millions of clients using tree-based models, SMOTE, repeated k-fold validation, and SHAP analysis.</p>
-          <div class="tags"><span>XGBoost</span><span>SMOTE</span><span>SHAP</span></div>
+        <article>
+          <h3>Associate Data Scientist · Societe Generale</h3>
+          <p class="date">Sep 2023 - Feb 2024</p>
+          <p>Built challenger models using Decision Tree, Random Forest and XGBoost; used SMOTE, repeated k-fold validation and SHAP analysis.</p>
         </article>
-        <article class="card">
-          <h3>Optimized RFE Algorithm</h3>
-          <p>Designed a customizable recursive feature elimination algorithm with early stopping to reduce feature count while maintaining performance.</p>
-          <div class="tags"><span>Feature Selection</span><span>Python</span><span>Scikit-learn</span></div>
+        <article>
+          <h3>Software Engineer · Societe Generale</h3>
+          <p class="date">Jun 2021 - Aug 2023</p>
+          <p>Developed hybrid chatbot flows with API integrations, contextual NLP features and Keras-based modelling.</p>
         </article>
       </div>
     </section>
 
-    <section id="skills" class="section">
-      <div class="section-heading">
+    <section id="skills" class="section compact-card">
+      <div class="section-title compact-title">
         <p class="eyebrow">Skills</p>
         <h2>Technical toolkit</h2>
       </div>
-      <div class="skill-grid">
+      <div class="skills-grid">
         <div>
           <h3>GenAI</h3>
-          <p>RAG, LangChain, LangGraph, GraphRAG, MCP, MLflow, tool-calling, query enhancement, semantic chunking, metadata filtering, re-ranking.</p>
+          <p>RAG, LangChain, LangGraph, GraphRAG, MCP/FastMCP, MLflow, tool-calling, prompt engineering, semantic chunking, metadata filtering, reranking, query enhancement.</p>
         </div>
         <div>
           <h3>ML & Data</h3>
-          <p>Classification, regression, NLP, time series forecasting, neural networks, model monitoring, SHAP, PySpark, SQL.</p>
+          <p>Classification, regression, NLP, word embeddings, chatbots, time-series forecasting, neural networks, model monitoring, SHAP, PySpark, SQL.</p>
         </div>
         <div>
           <h3>Engineering</h3>
-          <p>Python, FastAPI, Docker, AWS Bedrock, S3, EC2, Lambda, TensorFlow, Keras, Scikit-learn.</p>
+          <p>Python, FastAPI, Docker, AWS Bedrock, S3, EC2, Lambda, TensorFlow, Keras, Scikit-learn, ChromaDB, Milvus, PostgreSQL.</p>
         </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section contact">
-      <p class="eyebrow">Contact</p>
-      <h2>Let’s connect.</h2>
-      <p>I’m open to Data Scientist, AI Engineer, and ML Engineer opportunities focused on GenAI and applied machine learning.</p>
-      <div class="cta-row centered">
-        <a class="btn primary" href="mailto:gunisha3007@gmail.com">Email Me</a>
-        <a class="btn secondary" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>© <span id="year"></span> Gunisha Chaturvedi. Built for GitHub Pages.</p>
+    <span>© <span id="year"></span> Gunisha Chaturvedi</span>
+    <span><a href="mailto:gunisha3007@gmail.com">gunisha3007@gmail.com</a></span>
   </footer>
 
   <script src="script.js"></script>
