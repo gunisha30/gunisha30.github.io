@@ -70,8 +70,8 @@ body::before {
   margin: 0;
   line-height: 0.95;
   letter-spacing: -0.06em;
-  font-size: clamp(2.8rem, 7vw, 5.5rem);
-  font-weight: 700;
+  font-size: clamp(2.3rem, 6vw, 5.1rem);
+  font-weight: 500;
 }
 
 .open-roles {
@@ -229,8 +229,8 @@ footer a {
   }
 
   .profile-photo {
-    width: 300px;
-    height: 300px;
+    width: 260px;
+    height: 260px;
   }
 
   .section {
@@ -239,7 +239,7 @@ footer a {
   }
 
   .name {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   footer {
