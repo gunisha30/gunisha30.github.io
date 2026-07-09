@@ -1,11 +1,12 @@
 :root {
   --bg: #0d1426;
   --bg-soft: #111d32;
-  --card: rgba(18, 31, 51, 0.84);
+  --card: rgba(18, 31, 51, 0.9);
   --text: #eaf0fa;
   --muted: #c5d0df;
   --accent: #47c7ff;
-  --border: rgba(255, 255, 255, 0.11);
+  --accent-2: #9b8cff;
+  --border: rgba(255, 255, 255, 0.12);
   --shadow: 0 22px 65px rgba(0, 0, 0, 0.28);
 }
 
@@ -24,7 +25,7 @@ body {
   background:
     radial-gradient(circle at top left, rgba(71, 199, 255, 0.18), transparent 32rem),
     linear-gradient(135deg, #0c1728 0%, #0d1426 54%, #111729 100%);
-  line-height: 1.55;
+  line-height: 1.6;
 }
 
 body::before {
@@ -45,22 +46,22 @@ body::before {
 }
 
 .hero {
-  min-height: 46vh;
+  min-height: 58vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 28px 0 20px;
+  padding: 34px 0 28px;
 }
 
 .profile-photo {
-  width: 220px;
-  height: 220px;
+  width: 230px;
+  height: 198px;
   object-fit: cover;
-  object-position: center top;
-  border-radius: 5%;
-  border: 1px solid rgba(255, 255, 255, 0.86);
+  object-position: center bottom;
+  border-radius: 28px;
+  border: 3px solid rgba(255, 255, 255, 0.88);
   box-shadow: var(--shadow);
   margin-bottom: 18px;
   background: #fff;
@@ -68,10 +69,10 @@ body::before {
 
 .name {
   margin: 0;
-  line-height: 0.95;
-  letter-spacing: 0.06em;
-  font-size: clamp(1.6rem, 3vw, 4.5rem);
-  font-weight: 100;
+  font-size: clamp(3rem, 6.7vw, 5.6rem);
+  line-height: 1;
+  letter-spacing: -0.045em;
+  font-weight: 640;
 }
 
 .open-roles {
@@ -85,7 +86,7 @@ body::before {
   max-width: 980px;
   margin: 18px auto 0;
   color: var(--muted);
-  font-size: 1.02rem;
+  font-size: 1.07rem;
 }
 
 .quick-links {
@@ -93,7 +94,7 @@ body::before {
   justify-content: center;
   gap: 10px;
   flex-wrap: wrap;
-  margin-top: 18px;
+  margin-top: 20px;
 }
 
 .btn {
@@ -112,25 +113,67 @@ body::before {
   background: linear-gradient(135deg, #5bd2ff, #9b8cff);
 }
 
+.section-break {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 16px 0 26px;
+}
+
+.section-break span {
+  display: block;
+  width: min(720px, 92%);
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(71, 199, 255, 0.55), rgba(155, 140, 255, 0.45), transparent);
+  box-shadow: 0 0 32px rgba(71, 199, 255, 0.35);
+}
+
 .section {
   margin: 22px 0;
-  padding: 24px;
+  padding: 26px;
   border: 1px solid var(--border);
   border-radius: 24px;
   background: rgba(13, 20, 38, 0.58);
   box-shadow: var(--shadow);
 }
 
+.projects-section {
+  background:
+    radial-gradient(circle at top right, rgba(71, 199, 255, 0.14), transparent 24rem),
+    linear-gradient(180deg, rgba(20, 35, 58, 0.92), rgba(10, 18, 34, 0.92));
+  border-color: rgba(71, 199, 255, 0.18);
+}
+
+.section-heading {
+  margin-bottom: 20px;
+}
+
+.eyebrow {
+  display: inline-flex;
+  margin: 0 0 8px;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.75rem;
+  font-weight: 900;
+}
+
 .section h2 {
+  display: inline-block;
   margin: 0 0 16px;
-  font-size: clamp(1.75rem, 3vw, 2.55rem);
-  letter-spacing: -0.04em;
+  font-size: clamp(2rem, 4vw, 3.3rem);
+  letter-spacing: -0.055em;
+  line-height: 1;
+  background: linear-gradient(135deg, #ffffff, #7fdcff 58%, #a99cff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 16px;
+  grid-template-columns: 1fr;
+  gap: 18px;
 }
 
 .project-card,
@@ -138,15 +181,94 @@ body::before {
 .skills-grid > div {
   background: var(--card);
   border: 1px solid var(--border);
-  border-radius: 18px;
-  padding: 18px;
+  border-radius: 20px;
+  padding: 22px;
 }
 
-.project-card h3,
-.experience-list h3,
-.skills-grid h3 {
-  margin: 0 0 8px;
-  font-size: 1.08rem;
+.project-card {
+  position: relative;
+  overflow: hidden;
+  border-color: rgba(71, 199, 255, 0.18);
+}
+
+.project-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+}
+
+.project-title-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.project-title-row::before {
+  content: "";
+  width: 10px;
+  height: 38px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, var(--accent), var(--accent-2));
+  flex: 0 0 auto;
+}
+
+.project-card h3 {
+  margin: 0;
+  font-size: clamp(1.35rem, 2.2vw, 1.8rem);
+  line-height: 1.12;
+  letter-spacing: -0.035em;
+  color: #fff;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0 16px;
+}
+
+.tech-tags span {
+  color: #d8f4ff;
+  background: rgba(71, 199, 255, 0.1);
+  border: 1px solid rgba(71, 199, 255, 0.22);
+  border-radius: 999px;
+  padding: 5px 10px;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.project-points {
+  display: grid;
+  gap: 13px;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.project-points li {
+  position: relative;
+  padding-left: 24px;
+  color: var(--muted);
+  font-size: 1.02rem;
+  line-height: 1.68;
+}
+
+.project-points li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.72em;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  box-shadow: 0 0 16px rgba(71, 199, 255, 0.5);
+}
+
+.project-card strong {
   color: #fff;
 }
 
@@ -155,13 +277,19 @@ body::before {
 .skills-grid p {
   margin: 0 0 10px;
   color: var(--muted);
-  font-size: 0.92rem;
+  font-size: 0.96rem;
 }
 
-.project-card p:last-child,
 .experience-list p:last-child,
 .skills-grid p:last-child {
   margin-bottom: 0;
+}
+
+.experience-list h3,
+.skills-grid h3 {
+  margin: 0 0 8px;
+  font-size: 1.08rem;
+  color: #fff;
 }
 
 code {
@@ -215,7 +343,6 @@ footer a {
     padding-top: 24px;
   }
 
-  .project-grid,
   .experience-list,
   .skills-grid {
     grid-template-columns: 1fr;
@@ -229,8 +356,9 @@ footer a {
   }
 
   .profile-photo {
-    width: 190px;
-    height: 190px;
+    width: 178px;
+    height: 154px;
+    border-radius: 22px;
   }
 
   .section {
@@ -239,7 +367,16 @@ footer a {
   }
 
   .name {
-    font-size: 0.5rem;
+    font-size: 2.7rem;
+    letter-spacing: -0.04em;
+  }
+
+  .project-card {
+    padding: 18px;
+  }
+
+  .project-points li {
+    font-size: 0.98rem;
   }
 
   footer {
