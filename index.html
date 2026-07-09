@@ -52,7 +52,19 @@
             <li>Achieved an estimated <strong>78% end-to-end answer accuracy</strong> on a manually curated set of 25 stock market queries spanning price lookups, sector analysis, and document-grounded questions.</li>
           </ul>
         </article>
+        
+        <article class="project-card">
+          <div class="project-title-row">
+            <h3>Multi-Agent Risk Assessment Framework</h3>
+          </div>
 
+          <ul class="project-points">
+            <li>Designed and optimised 15 prompts for a risk assessment automation,  built a dynamic pipeline that pulls data from APIs at runtime and injects it into prompt templates as typed variables, grounding each LLM call in live risk register data. Prompts covered risk analysis, control assessment, incident/issue summarisation, and residual risk rating.</li>
+            <li>Developed **few-shot examples** for two 5-class classification tasks, impact rating and frequency rating, to guide the model toward calibrated, evidence-based predictions consistent with bank's risk frameworks. Applied role/persona assignment across all prompts to activate domain-specific token distributions to improve terminology precision and reasoning depth. Enforced **structured JSON output** by defining explicit schemas with typed fields and null-fallback defaults.</li>
+            <li>Used structural separation and explicit delimiters (XML-style tags such as `<risk_info>`, `<control_info>`, `<instructions>`) to cleanly isolate input data from task instructions and output format specifications. Mitigated recency bias in few-shot classification by balancing label distribution across examples and adding ordering-invariant instructions, reducing prediction instability on borderline risk inputs.</li>
+          </ul>
+        </article>
+        
         <article class="project-card">
           <div class="project-title-row">
             <h3>Optimized RFE</h3>
