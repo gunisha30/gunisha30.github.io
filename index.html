@@ -33,10 +33,7 @@
       <div class="project-grid">
         <article class="project-card">
           <div class="project-title-row">
-            <h3>Stock Market PDF RAG Pipeline</h3>
-          </div>
-          <div class="tech-tags">
-            <span>RAG</span><span>Metadata Filtering</span><span>ChromaDB / Milvus</span><span>Reranking</span>
+            <h3>Stock Market Q/A Assistant (RAG)</h3>
           </div>
           <ul class="project-points">
             <li>Built a RAG pipeline to answer queries over a corpus of mixed-format stock market PDFs, including analysis reports, annual reports, AGM notices, and market news. Achieved <strong>65% retrieval recall</strong> and <strong>69% answer accuracy</strong> on a manually evaluated question set. Used - Amazon Titan Text Embeddings v2 (1024-dim vectors), all-MiniLM-L6-v2, ChromaDB/Milvus vector store with optional persistence to disk to avoid re-embedding on repeated runs.</li>
@@ -47,10 +44,7 @@
 
         <article class="project-card">
           <div class="project-title-row">
-            <h3>Stock Market Multi-Agent Assistant</h3>
-          </div>
-          <div class="tech-tags">
-            <span>LangGraph</span><span>Multi-Agent</span><span>PostgreSQL Memory</span><span>Tool Routing</span>
+            <h3>Defense Stocks Research Assistant (Multi-Agent)</h3>
           </div>
           <ul class="project-points">
             <li>Built a stock market assistant - a multi-agent system that routes user queries across three specialized sub-agents: a stock price agent (real-time data via yfinance), a defence sector research agent, and a RAG document research agent. The orchestrator decomposes multi-part queries into parallel tool calls where possible. Sub-agents are added as tools to the orchestrator, and are themselves individual agents with their own tool sets, forming a two-tier hierarchy. Achieved an estimated <strong>85% tool routing accuracy</strong> (correct sub-agent selected for query type) on manual evaluation.</li>
@@ -62,9 +56,6 @@
         <article class="project-card">
           <div class="project-title-row">
             <h3>Optimized RFE</h3>
-          </div>
-          <div class="tech-tags">
-            <span>Feature Selection</span><span>Model Benchmarking</span><span>Scikit-learn</span><span>Python</span>
           </div>
           <ul class="project-points">
             <li>Developed an optimized Recursive Feature Elimination (RFE) algorithm with early stopping criterion, which iteratively evaluates model performance upon feature removal, and stops when performance stabilizes or drops beyond a specified threshold for a given window of iterations.</li>
